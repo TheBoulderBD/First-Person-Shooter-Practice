@@ -882,6 +882,33 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1977555664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1977555661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab58f2ecdf8bc824a8e767a504deec61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  gravity: -9.8
+  jumpHeight: 1.5
+--- !u!114 &1977555665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1977555661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ba4e4cecf41335409eb3a927d65991c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &7568146848267198755
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -983,6 +1010,14 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1977555663}
+    - targetCorrespondingSourceObject: {fileID: 2164090786430408027, guid: 38ff66f893e282b40af0da3c5d94941e,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1977555665}
+    - targetCorrespondingSourceObject: {fileID: 2164090786430408027, guid: 38ff66f893e282b40af0da3c5d94941e,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1977555664}
   m_SourcePrefab: {fileID: 100100000, guid: 38ff66f893e282b40af0da3c5d94941e, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
