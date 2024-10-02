@@ -49,8 +49,8 @@ public class PlayerMotor : MonoBehaviour
         }
 
         controller.Move(playerVelocity * Time.deltaTime);
-        Debug.Log(animator.GetFloat("Speed"));
-
+        //Debug.Log(animator.GetFloat("Speed"));
+        Debug.Log(playerVelocity.y);
 
     }
 

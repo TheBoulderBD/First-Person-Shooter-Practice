@@ -930,7 +930,7 @@ MonoBehaviour:
   cam: {fileID: 940571658}
   xSens: 20
   ySens: 20
---- !u!95 &1977555669
+--- !u!95 &1977555671
 Animator:
   serializedVersion: 5
   m_ObjectHideFlags: 0
@@ -959,6 +959,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 683209029364428669, guid: 38ff66f893e282b40af0da3c5d94941e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 683209029364428669, guid: 38ff66f893e282b40af0da3c5d94941e,
         type: 3}
       propertyPath: m_LocalRotation.w
@@ -1067,7 +1072,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2164090786430408027, guid: 38ff66f893e282b40af0da3c5d94941e,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1977555669}
+      addedObject: {fileID: 1977555671}
   m_SourcePrefab: {fileID: 100100000, guid: 38ff66f893e282b40af0da3c5d94941e, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
