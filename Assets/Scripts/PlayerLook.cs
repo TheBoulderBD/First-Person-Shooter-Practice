@@ -9,7 +9,10 @@ public class PlayerLook : MonoBehaviour
 
     public float xSens = 30f;
     public float ySens = 30f;
-
+    private void Start()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+    }
     public void ProcessLook(Vector2 input)
     {
         float mouseX = input.x;
@@ -23,4 +26,5 @@ public class PlayerLook : MonoBehaviour
         transform.Rotate(Vector3.up * (mouseX * Time.deltaTime) * xSens);
 
     }
+
 }

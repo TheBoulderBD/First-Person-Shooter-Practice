@@ -11,16 +11,20 @@ public class PlayerMotor : MonoBehaviour
     public float gravity = -9.8f;
     public float jumpHeight = 3f;
 
+    private Animator animator;
+
     // Start is called before the first frame update
     void Start()
     {
         controller = GetComponent<CharacterController>();
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
         isGrounded = controller.isGrounded;
+
     }
     public void ProcessMove(Vector2 input)
     {
@@ -29,14 +33,23 @@ public class PlayerMotor : MonoBehaviour
         moveDirection.z = input.y;
         controller.Move(transform.TransformDirection(moveDirection)* speed * Time.deltaTime);
         playerVelocity.y += gravity * Time.deltaTime;
-
+        //Animation
+        if(moveDirection == Vector3.zero)
+        {
+            animator.SetFloat("Speed", 0);
+        }
+        else
+        {
+            animator.SetFloat("Speed", 0.5f);
+        }
+        //Player isn't jumping
         if (isGrounded && playerVelocity.y < 0)
         {
             playerVelocity.y = -2f;
         }
 
         controller.Move(playerVelocity * Time.deltaTime);
-        Debug.Log(playerVelocity.y);
+        Debug.Log(animator.GetFloat("Speed"));
 
 
     }
