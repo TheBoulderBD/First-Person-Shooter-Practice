@@ -57,7 +57,7 @@ public class Weapon : MonoBehaviour
     {
         isShooting = false;
     }
-    
+
     private void PerformShot()
     {
         readyToShoot = false;
@@ -67,9 +67,9 @@ public class Weapon : MonoBehaviour
         if(Physics.Raycast(cam.transform.position, direction, out rayHit, bulletRange))
         {
             Debug.Log(rayHit.collider.gameObject.name);
-            if(rayHit.collider.gameObject.tag == EnemyTag)
+            if(rayHit.collider.gameObject.CompareTag("Enemy"))
             {
-                //Do damage to enemy
+                Destroy(rayHit.collider.gameObject);
             }
             else
             {
