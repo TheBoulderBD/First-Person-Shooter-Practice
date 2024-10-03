@@ -67,6 +67,7 @@ public class Weapon : MonoBehaviour
         if(Physics.Raycast(cam.transform.position, direction, out rayHit, bulletRange))
         {
             Debug.Log(rayHit.collider.gameObject.name);
+            Debug.Log(ammoLeft);
             if(rayHit.collider.gameObject.CompareTag("Enemy"))
             {
                 Destroy(rayHit.collider.gameObject);
